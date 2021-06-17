@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testapp.MainPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" >
+       
+        <Label Text="15"
+                   TextColor="DarkBlue"
+                   HorizontalTextAlignment="Center"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   x:Name="msg1"
+                   />
+        
+        <Label Text="30"
+                   TextColor="DarkBlue"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   x:Name="msg2"
+                   />
+        <Label Text="Clima en tu Ciudad"
+               FontAttributes="Bold"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               TextColor="#565168"
+               />
+        <Entry Placeholder="Ciudad" x:Name="city" />
+        <Entry Placeholder="Pais" x:Name="country" />
+        <Button Text="Obtener Clima"
+                BackgroundColor="DarkMagenta"
+                TextColor="White"
+                Clicked="Button_Clicked"/>
+        
+
+        
+    </StackLayout>
+
+</ContentPage>
